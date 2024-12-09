@@ -5,7 +5,7 @@ Copyright (c) 2024, Jorge F. Urbán. University of Alicante
 This project contains modified versions of the scripts
 "_optimize.py" and "_minimize.py", which are 
 within "scipy.optimize". While it is based on the original
-work of SciPy, this project is not  officially maintained or 
+work of SciPy, this project is NOT officially maintained or 
 endorsed by the original developers of SciPy. 
 The use of the name 'SciPy' or any related names should not be 
 interpreted as endorsement, sponsorship, or support by the SciPy developers.
