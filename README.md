@@ -7,3 +7,6 @@ together with the numerous scripts corresponding to the examples discussed in th
 
 # IMPORTANT
 This repository contains modified versions of two scripts from the ‘optimize’ package within the Scipy library [scipy.optimize](https://docs.scipy.org/doc/scipy/reference/optimize.html). Specifically, the scripts named ‘_optimize.py’ and ‘_minimize.py’ have been modified. The original codes can be found in [scipy](https://github.com/scipy/scipy/tree/main/scipy/optimize).
+
+# License
+This project uses the BSD 3-clause license. The `LICENSE` file included in this repository contains the license.
