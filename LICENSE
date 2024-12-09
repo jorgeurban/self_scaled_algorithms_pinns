@@ -1,13 +1,14 @@
 BSD 3-Clause License
 
-Copyright (c) 2001-2024, SciPy Developers
-Copyright (c) 2024, University of Alicante
+Copyright (c) 2024, Jorge F. Urbán. University of Alicante
 
-This project is a modified version of the SciPy library "scipy.optimize".
-While it is based on the original work of SciPy, this project is not 
-officially maintained or endorsed by the original developers of SciPy. 
-The use of the name 'SciPy' or any related names should not be interpreted 
-as endorsement, sponsorship, or support by the SciPy developers.
+This project contains modified versions of the scripts
+"_optimize.py" and "_minimize.py", which are 
+within "scipy.optimize". While it is based on the original
+work of SciPy, this project is not  officially maintained or 
+endorsed by the original developers of SciPy. 
+The use of the name 'SciPy' or any related names should not be 
+interpreted as endorsement, sponsorship, or support by the SciPy developers.
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
