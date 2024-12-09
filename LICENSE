@@ -3,6 +3,8 @@ BSD 3-Clause License
 Copyright (c) 2001-2024, SciPy Developers
 Copyright (c) 2024, University of Alicante
 
+This project is a modified version of the SciPy library "scipy.optimize", developed by the contributors of SciPy. While it is based on the original work of SciPy, this project is not officially maintained or endorsed by the original developers of SciPy. The use of the name 'SciPy' or any related names should not be interpreted as endorsement, sponsorship, or support by the SciPy developers.
+
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
 
