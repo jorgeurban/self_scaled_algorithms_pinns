@@ -7,7 +7,7 @@ together with numerous scripts corresponding to the examples discussed in this w
 
 # Requirements
 * The Machine learning frameworks considered here are [Tensorflow](https://www.tensorflow.org/?hl=es-419) y [Keras](https://keras.io/). The specific versions used in these work are 2.10.1 for Tensorflow, and 2.10.0 for Keras.
-* [Numpy](https://numpy.org/) and [Scipy](https://scipy.org/) are also needed. These work has used 1.24.1 for Numpy, and 1.12.0 for Scipy.
+* [Numpy](https://numpy.org/) and [Scipy](https://scipy.org/) are also needed. This work has used 1.24.1 for Numpy, and 1.12.0 for Scipy.
 
 # How to use
 
