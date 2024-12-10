@@ -33,7 +33,7 @@ together with numerous scripts corresponding to the examples discussed in this w
      + `SSBFGS_OL` Same, but tauk is calculated with the original choice of [Self-Scaling Variable Metric (SSVM) Algorithms](https://pubsonline.informs.org/doi/10.1287/mnsc.20.5.845).
      + `SSBroyden2`: Here we use the tauk and phik expressions originally introduced in [A Wide Interval for Efficient Self-Scaling Quasi-Newton Algorithms](https://optimization-online.org/2003/08/699/)
        (Formulas 13-23 of [our article](https://www.sciencedirect.com/science/article/pii/S0021999124009045))
-     + `SSBroyden1`: Another possible choice for these parameters (sometimes better, sometimes worse than `SSBroyden2`).
+     + `SSBroyden1`: Another possible choice for these parameters  introduced in [A Wide Interval for Efficient Self-Scaling Quasi-Newton Algorithms](https://optimization-online.org/2003/08/699/) (sometimes better, sometimes worse than `SSBroyden2`).
 * Finally, you can also choose to train against the square root of the logarithm of the loss function during the Quasi-Newton optimization. To do that, choose `use_sqrt = True` or `use_log = True` respectively in the Hyperparameter file.
   
 # IMPORTANT
