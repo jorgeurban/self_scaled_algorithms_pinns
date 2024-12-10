@@ -13,7 +13,8 @@ together with numerous scripts corresponding to the examples discussed in this w
 
 * In order to use the codes associated with each of the examples, you should first download the codes `modified_minimize.py` and `modified_optimize.py`, and then replace respectively the scripts `_minimize.py` and `_optimize.py` by these two files. You will find the scripts `_minimize.py` and `_optimize.py` in a folder called `optimize`, where you have Scipy installed.
 * Each folder contains of this repository within the folder `examples` contains two files: 
-  - Main file: Same title as the folder.
+  - Main file: Same name as the folder. This is the file used for training.
+  - Hyperparameter file: Same name as the main file, but followed by '_hparams'.
 # IMPORTANT
 This repository contains modified versions of two scripts from the ‘optimize’ package within the Scipy library [scipy.optimize](https://docs.scipy.org/doc/scipy/reference/optimize.html). Specifically, the scripts named ‘_optimize.py’ and ‘_minimize.py’ have been modified. The original codes can be found in [scipy](https://github.com/scipy/scipy/tree/main/scipy/optimize). 
 
