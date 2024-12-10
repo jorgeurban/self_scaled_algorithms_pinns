@@ -482,8 +482,7 @@ epochs_bfgs+=Adam_epochs
 lossbfgs = np.zeros(len(epochs_bfgs)) #loss bfgs list
 error_list = np.zeros(len(lossbfgs))
 
-#callback function. If you use the powered mse loss, decomment the first line and comment the second
-# If you use the log loss, decomment the second line and comment the first
+cont=0
 def callback(*,intermediate_result): 
     global N,cont,lossbfgs,psistar,Xstar,x,Nprint_bfgs
     if (cont+1)%Nprint_bfgs == 0 or cont == 0:
