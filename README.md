@@ -13,3 +13,8 @@ This project is NOT officially maintained or endorsed by the original developers
 # License
 This project uses the BSD 3-clause license. This work uses modified scripts of Scipy (see `LICENSE.txt`).
 
+# Citation 
+'
+fdf
+fdf
+'
