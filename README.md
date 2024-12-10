@@ -5,11 +5,13 @@ This repository includes the implementation of the Self-scaled Quasi-Newton algo
 
 together with numerous scripts corresponding to the examples discussed in this work. These scripts contain numerous comments, in order to facilitate their use and modification. Other optimization algorithms will also be included in the future.
 
+# Requirements
+* The Machine learning frameworks considered here are [Tensorflow](https://www.tensorflow.org/?hl=es-419) y [Keras](https://keras.io/). The specific versions used in these work are 2.10.1 for Tensorflow, and 2.10.0 for Keras.
+* [Numpy](https://numpy.org/) and [Scipy](https://scipy.org/) are also needed. These work has used 1.24.1 for Numpy, and 1.12.0 for Scipy.
+
 # How to use
 
 * In order to use the codes associated with each of the examples, you should first download the codes `modified_minimize.py` and `modified_optimize.py`, and then replace respectively the scripts `_minimize.py` and `_optimize.py` by these two files. You will find the scripts `_minimize.py` and `_optimize.py` in a folder called `optimize`, where you have Scipy installed.
-* The Machine learning frameworks considered here are [Tensorflow](https://www.tensorflow.org/?hl=es-419) y [Keras](https://keras.io/). The specific versions used in these work are 2.10.1 for Tensorflow, and 2.10.0 for Keras.
-* [Numpy](https://numpy.org/) and [Scipy](https://scipy.org/) are also needed. These work has used 1.24.1 for Numpy, and 1.12.0 for Scipy.
 
 # IMPORTANT
 This repository contains modified versions of two scripts from the ‘optimize’ package within the Scipy library [scipy.optimize](https://docs.scipy.org/doc/scipy/reference/optimize.html). Specifically, the scripts named ‘_optimize.py’ and ‘_minimize.py’ have been modified. The original codes can be found in [scipy](https://github.com/scipy/scipy/tree/main/scipy/optimize). 
