@@ -23,10 +23,10 @@ together with numerous scripts corresponding to the examples discussed in this w
       
 * Within the different options for the Quasi-Newton hyperparameters, we can select the different Self-scaled Quasi-Newton algorithms, as well as other additional algorithms. In order to choose them we have two different variables: `method` and `method_bfgs`:
    - In `method`, you can choose between:
-     + `BFGS`: Here, we include BFGS and the different self-scaled QN methods. To distinguish between the different QN algorithms, we use `method_bfgs` (see below).
+     + `BFGS`: Here, we include BFGS and the different self-scaled Quasi-Newton methods. To distinguish between the different Quasi-Newton algorithms, we use `method_bfgs` (see below).
      + `bfgsr`: Personal implementation of the factored BFGS Hessian approximations. See [On Recent Developments in BFGS Methods for Unconstrained Optimization](https://ccom.ucsd.edu/reports/UCSD-CCoM-22-01.pdf) for details.
      + `bfgsz`: Personal implementation of the factored inverse BFGS Hessian approximations. See [On Recent Developments in BFGS Methods for Unconstrained Optimization](https://ccom.ucsd.edu/reports/UCSD-CCoM-22-01.pdf) for details.
-   - If `method=BFGS`, the variable `method_bfgs` chooses different QN methods. We have implemented:
+   - If `method=BFGS`, the variable `method_bfgs` chooses different Quasi-Newton methods. We have implemented:
      + `BFGS_scipy`: The original implementation of BFGS of Scipy.
      + `BFGS`: Equivalent implementation, but faster.
      + `SSBFGS_AB`: The Self-scaled BFGS formula, where the tauk coefficient is introduced originally in [Numerical Experience with a Class of Self-Scaling Quasi-Newton Algorithms](https://link.springer.com/article/10.1023/A:1022608410710) (see also expression 11 of [our article](https://www.sciencedirect.com/science/article/pii/S0021999124009045)).
