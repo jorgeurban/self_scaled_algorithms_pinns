@@ -26,6 +26,12 @@ together with numerous scripts corresponding to the examples discussed in this w
      + `BFGS`: Here, we include BFGS and the different self-scaled QN methods. To distinguish between the different QN algorithms, we use `method_bfgs` (see below).
      + `bfgsr`: Personal implementation of the factored BFGS Hessian approximations. See [On Recent Developments in BFGS Methods for Unconstrained Optimization](https://ccom.ucsd.edu/reports/UCSD-CCoM-22-01.pdf) for details.
      + `bfgsz`: Personal implementation of the factored inverse BFGS Hessian approximations. See [On Recent Developments in BFGS Methods for Unconstrained Optimization](https://ccom.ucsd.edu/reports/UCSD-CCoM-22-01.pdf) for details.
+   - If `method=BFGS`, the variable `method_bfgs` chooses different QN methods. We have implemented:
+     + `BFGS_scipy`: The original implementation of BFGS of Scipy.
+     + `BFGS`: Equivalent implementation, but faster.
+     + `SSBFGS_AB`: The Self-scaled BFGS formula, where the tauk coefficient is calculated with 
+       Al-Baali's formula (Formula 11 of "Unveiling the optimization process in PINNs")
+  
   
 # IMPORTANT
 This repository contains modified versions of two scripts from the ‘optimize’ package within the Scipy library [scipy.optimize](https://docs.scipy.org/doc/scipy/reference/optimize.html). Specifically, the scripts named ‘_optimize.py’ and ‘_minimize.py’ have been modified. The original codes can be found in [scipy](https://github.com/scipy/scipy/tree/main/scipy/optimize). 
