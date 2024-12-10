@@ -490,7 +490,7 @@ def callback(*,intermediate_result): #Callback function, to obtain the loss at e
             loss_value = intermediate_result.fun
         lossbfgs[(cont+1)//Nprint_bfgs] = loss_value
         
-        ptest = output(Xtest).numpy().reshape(x.shape)
+        ptest = output(N,Xtest).numpy().reshape(x.shape)
         error = np.linalg.norm(ptest-pteor)/np.linalg.norm(pteor)
         error_list[(cont+1)//Nprint_bfgs] = error
         #Bk = intermediate_result.hess_inv
