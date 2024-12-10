@@ -11,5 +11,5 @@ This repository contains modified versions of two scripts from the â€˜optimizeâ€
 This project is NOT officially maintained or endorsed by the original developers of SciPy. The use of the name 'SciPy' or any related names should not be interpreted as endorsement, sponsorship, or support by the SciPy developers.
 
 # License
-This project uses the BSD 3-clause license. 
+This project uses the BSD 3-clause license. This work uses modified scripts of Scipy (see `LICENSE.txt`).
 
