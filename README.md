@@ -20,8 +20,9 @@ together with numerous scripts corresponding to the examples discussed in this w
     + Adam hyperparameters: All the hyperparameters related with Adam optimization. See the Main file for details.
     + Batch hyperparameters: Number of points, number of iterations per batch, and adaptive resampling hyperparameters. We have incorporated here the RAD algorithm introduced in [A comprehensive study of non-adaptive and residual-based adaptive sampling for physics-informed neural networks](https://www.sciencedirect.com/science/article/abs/pii/S0045782522006260).
     + Quasi-Newton hyperparameters: All the hyperparameters related with Quasi-Newton optimization. See the Main file for details.
+      
 * Within the options for the Quasi-Newton hyperparameters, we have the different Self-scaled Quasi-Newton algorithms, as well as other additional algorithms. In order to choose them we have two different variables: `method` and `method_bfgs`:
-  -
+  
 # IMPORTANT
 This repository contains modified versions of two scripts from the ‘optimize’ package within the Scipy library [scipy.optimize](https://docs.scipy.org/doc/scipy/reference/optimize.html). Specifically, the scripts named ‘_optimize.py’ and ‘_minimize.py’ have been modified. The original codes can be found in [scipy](https://github.com/scipy/scipy/tree/main/scipy/optimize). 
 
