@@ -12,8 +12,7 @@ def hyperparameter_configuration():
     seed={"seed":2}
     architecture_hparams={"neurons":30,
                           "layers":2,
-                          "output_dim":1,
-                          "kmax":1
+                          "output_dim":1
                           }
     PDE_hparams={"k":4.
                 }
@@ -40,9 +39,9 @@ def hyperparameter_configuration():
     
     bfgs_hparams={"BFGS_epochs":20000,
                   "method":"BFGS",
-                  "method_bfgs":"SSBroyden2",
+                  "method_bfgs":"BFGS",
                   "use_sqrt":False,
-                  "use_log":False,
+                  "use_log":True,
                   "Nprint_bfgs":100}
     
     test_hparams={"Nx":1000,

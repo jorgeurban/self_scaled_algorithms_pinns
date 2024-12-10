@@ -476,12 +476,12 @@ Xtest,x,y = generate_test(Nx,Ny)
 pteor = usol(x, y)
 cont=0
 def callback(*,intermediate_result): #Callback function, to obtain the loss at every iteration
-    global N,cont,lossbfgs,Xtest,x,error_list,pteor
+    global N,cont,lossbfgs,Xtest,x,error_list,pteor,Nprint_bfgs
     '''
     if cont%Nsave == 0:
         N.save(fname.format(cont+Nepochs)) 
     '''
-    if (cont+1)%100 == 0 or cont == 0:
+    if (cont+1)%Nprint_bfgs == 0 or cont == 0:
         if use_sqrt:
             loss_value = np.power(intermediate_result.fun,2)
         elif use_log:
