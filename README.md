@@ -19,6 +19,7 @@ together with numerous scripts corresponding to the examples discussed in this w
     + PDE parameters (if any)
     + Adam hyperparameters: All the hyperparameters related with Adam optimization.
     + Batch hyperparameters: Number of points, number of iterations per batch, and adaptive resampling hyperparameters. We have incorporated here the RAD algorithm introduced in [A comprehensive study of non-adaptive and residual-based adaptive sampling for physics-informed neural networks](https://www.sciencedirect.com/science/article/abs/pii/S0045782522006260).
+    + 
 # IMPORTANT
 This repository contains modified versions of two scripts from the ‘optimize’ package within the Scipy library [scipy.optimize](https://docs.scipy.org/doc/scipy/reference/optimize.html). Specifically, the scripts named ‘_optimize.py’ and ‘_minimize.py’ have been modified. The original codes can be found in [scipy](https://github.com/scipy/scipy/tree/main/scipy/optimize). 
 
