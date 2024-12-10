@@ -29,8 +29,7 @@ together with numerous scripts corresponding to the examples discussed in this w
    - If `method=BFGS`, the variable `method_bfgs` chooses different QN methods. We have implemented:
      + `BFGS_scipy`: The original implementation of BFGS of Scipy.
      + `BFGS`: Equivalent implementation, but faster.
-     + `SSBFGS_AB`: The Self-scaled BFGS formula, where the tauk coefficient is calculated with 
-       Al-Baali's formula (Formula 11 of "Unveiling the optimization process in PINNs")
+     + `SSBFGS_AB`: The Self-scaled BFGS formula, where the tauk coefficient is introduced originally in [Numerical Experience with a Class of Self-Scaling Quasi-Newton Algorithms](https://link.springer.com/article/10.1023/A:1022608410710) (see also expression 11 of [Main article](https://www.sciencedirect.com/science/article/pii/S0021999124009045)).
   
   
 # IMPORTANT
