@@ -31,7 +31,7 @@ together with numerous scripts corresponding to the examples discussed in this w
      + `BFGS`: Equivalent implementation, but faster.
      + `SSBFGS_AB`: The Self-scaled BFGS formula, where the tauk coefficient is introduced originally in [Numerical Experience with a Class of Self-Scaling Quasi-Newton Algorithms](https://link.springer.com/article/10.1023/A:1022608410710) (see also expression 11 of [our article](https://www.sciencedirect.com/science/article/pii/S0021999124009045)).
      + `SSBFGS_OL` Same, but tauk is calculated with the original choice of [Self-Scaling Variable Metric (SSVM) Algorithms](https://pubsonline.informs.org/doi/10.1287/mnsc.20.5.845).
-     + `SSBroyden2`: Here we use the tauk and phik expressions defined in the paper
+     + `SSBroyden2`: Here we use the tauk and phik expressions originally introduced in [A Wide Interval for Efficient Self-Scaling Quasi-Newton Algorithms](https://optimization-online.org/2003/08/699/)
        (Formulas 13-23 of [our article](https://www.sciencedirect.com/science/article/pii/S0021999124009045))
      + `SSBroyden1`: Another possible choice for these parameters (sometimes better, sometimes worse than `SSBroyden2`).
 * Finally, you can also choose to train against the square root of the logarithm of the loss function during the Quasi-Newton optimization. To do that, choose `use_sqrt = True` or `use_log = True` respectively in the Hyperparameter file.
