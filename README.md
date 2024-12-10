@@ -33,7 +33,7 @@ together with numerous scripts corresponding to the examples discussed in this w
      + `SSBFGS_OL` Same, but tauk is calculated with the original choice of [Self-Scaling Variable Metric (SSVM) Algorithms](https://pubsonline.informs.org/doi/10.1287/mnsc.20.5.845).
      + `SSBroyden2`: Here we use the tauk and phik expressions defined in the paper
        (Formulas 13-23 of [our article](https://www.sciencedirect.com/science/article/pii/S0021999124009045))
-  
+     + `SSBroyden1`: Another possible choice for these parameters (sometimes better, sometimes worse than `SSBroyden2`).
   
 # IMPORTANT
 This repository contains modified versions of two scripts from the ‘optimize’ package within the Scipy library [scipy.optimize](https://docs.scipy.org/doc/scipy/reference/optimize.html). Specifically, the scripts named ‘_optimize.py’ and ‘_minimize.py’ have been modified. The original codes can be found in [scipy](https://github.com/scipy/scipy/tree/main/scipy/optimize). 
