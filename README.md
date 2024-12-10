@@ -12,14 +12,14 @@ together with numerous scripts corresponding to the examples discussed in this w
 # How to use
 
 * In order to use the codes associated with each of the examples, you should first download the codes `modified_minimize.py` and `modified_optimize.py`, and then replace respectively the scripts `_minimize.py` and `_optimize.py` by these two files. You will find the scripts `_minimize.py` and `_optimize.py` in a folder called `optimize`, where you have Scipy installed.
-* Each folder contains of this repository within the folder `examples` contains two files: 
+* Each folder contains of this repository within the folder `examples` contains two `.py` files: 
   - Main file: Same name as the folder. This is the file used for training.
   - Hyperparameter file: Same name as the main file, but followed by `_hparams`. In this file, you can choose:
     + Architecture hyperparameters: Hidden layers, neurons at every hidden layer, and output neurons.
     + PDE parameters (if any)
     + Adam hyperparameters: All the hyperparameters related with Adam optimization. See the Main file for details.
     + Batch hyperparameters: Number of points, number of iterations per batch, and adaptive resampling hyperparameters. We have incorporated here the RAD algorithm introduced in [A comprehensive study of non-adaptive and residual-based adaptive sampling for physics-informed neural networks](https://www.sciencedirect.com/science/article/abs/pii/S0045782522006260).
-    + Quasi-Newton hyperparameters: All the hyperparameters related with Adam optimization. See the Main file for details.
+    + Quasi-Newton hyperparameters: All the hyperparameters related with Quasi-Newton optimization. See the Main file for details.
 # IMPORTANT
 This repository contains modified versions of two scripts from the ‘optimize’ package within the Scipy library [scipy.optimize](https://docs.scipy.org/doc/scipy/reference/optimize.html). Specifically, the scripts named ‘_optimize.py’ and ‘_minimize.py’ have been modified. The original codes can be found in [scipy](https://github.com/scipy/scipy/tree/main/scipy/optimize). 
 
