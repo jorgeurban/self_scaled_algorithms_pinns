@@ -11,7 +11,7 @@ together with numerous scripts corresponding to the examples discussed in this w
 
 # How to use
 
-* In order to use the codes associated with each of the examples, you should first download the codes `modified_minimize.py` and `modified_optimize.py`, and then replace respectively the scripts `_minimize.py` and `_optimize.py` by these two files. You will find the scripts `_minimize.py` and `_optimize.py` in a folder called `optimize`, where you have Scipy installed.
+* To utilise the codes associated with each example, please download the `modified_minimize.py` and `modified_optimize.py` files and replace the `_minimize.py` and `_optimize.py` scripts with these two files, respectively. The `_minimize.py` and `_optimize.py` scripts can be found in a folder called 'optimize', which should be located in the same directory as SciPy.
 * Each of the folders of this repository contains the different problems considered in [our article](https://www.sciencedirect.com/science/article/pii/S0021999124009045). They are labeled also in the same way.
 * Each folder contains two `.py` files: 
   - Main file: Same name as the folder. This is the file used for training.
