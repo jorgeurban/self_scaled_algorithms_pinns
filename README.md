@@ -35,7 +35,7 @@ together with numerous scripts corresponding to the examples discussed in this w
      + `SSBroyden2`: Here we use the tauk and phik expressions originally introduced in [A Wide Interval for Efficient Self-Scaling Quasi-Newton Algorithms](https://optimization-online.org/2003/08/699/)
        (Formulas 13-23 of [our article](https://www.sciencedirect.com/science/article/pii/S0021999124009045))
      + `SSBroyden1`: Another possible choice for these parameters  introduced in [A Wide Interval for Efficient Self-Scaling Quasi-Newton Algorithms](https://optimization-online.org/2003/08/699/) (sometimes better, sometimes worse than `SSBroyden2`).
-* Finally, you can also choose to train against the square root of the logarithm of the loss function during the Quasi-Newton optimization. To do that, choose `use_sqrt = True` or `use_log = True` respectively in the Hyperparameter file.
+* Finally, you can also choose to train against the square root or the logarithm of the loss function during the Quasi-Newton optimization. To do that, choose `use_sqrt = True` or `use_log = True` respectively in the Hyperparameter file.
   
 # IMPORTANT
 This repository contains modified versions of two scripts from the ‘optimize’ package within the Scipy library [scipy.optimize](https://docs.scipy.org/doc/scipy/reference/optimize.html). Specifically, the scripts named ‘_optimize.py’ and ‘_minimize.py’ have been modified. The original codes can be found in [scipy](https://github.com/scipy/scipy/tree/main/scipy/optimize). 
