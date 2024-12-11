@@ -44,7 +44,7 @@ def hyperparameter_configuration():
     
     bfgs_hparams={"BFGS_epochs":20000,
                   "method":"BFGS",
-                  "method_bfgs":"SSBroyden2",
+                  "method_bfgs":"BFGS",
                   "use_sqrt":False,
                   "use_log":False,
                   "Nprint_bfgs":100}

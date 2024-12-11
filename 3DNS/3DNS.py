@@ -454,7 +454,7 @@ def loss_and_gradient_TF(N,X,use_sqrt,use_log): #Gradients wrt the trainable par
       elif use_log:
           loss_value = tf.math.log(loss(equ,eqv,eqw,eq_inc))
       else:
-          loss_value = loss(loss(equ,eqv,eqw,eq_inc))
+          loss_value = loss(equ,eqv,eqw,eq_inc)
     gradsN = tape.gradient(loss_value,N.trainable_variables)
     return loss_value,gradsN
 
@@ -492,10 +492,6 @@ error_list = np.zeros(len(lossbfgs))
 cont=0
 def callback(*,intermediate_result): #Callback function, to obtain the loss at every iteration
     global N,cont,lossbfgs,Xstar,umod_star,error_list
-    '''
-    if cont%Nsave == 0:
-        N.save(fname.format(cont+Nepochs)) 
-    '''
     if (cont+1)%100 == 0 or cont == 0:
         if use_sqrt:
             loss_value = np.power(intermediate_result.fun,2)
@@ -505,7 +501,7 @@ def callback(*,intermediate_result): #Callback function, to obtain the loss at e
             loss_value = intermediate_result.fun
         lossbfgs[(cont+1)//Nprint_bfgs] = loss_value
         
-        utest,vtest,wtest = output(Xstar, x0, y0, z0, Lx, Ly, Lz)[:-1]
+        utest,vtest,wtest = output(N,Xstar, x0, y0, z0, Lx, Ly, Lz)[:-1]
         utest = utest.numpy().reshape(umod_star.shape)
         vtest = vtest.numpy().reshape(umod_star.shape)
         wtest = wtest.numpy().reshape(umod_star.shape)
