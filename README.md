@@ -11,18 +11,18 @@ together with numerous scripts corresponding to the examples discussed in this w
 
 # How to use
 
-* To use the codes associated with each example, please download the `modified_minimize.py` and `modified_optimize.py` files and replace the `_minimize.py` and `_optimize.py` scripts with these two files, respectively. The `_minimize.py` and `_optimize.py` scripts can be found in a folder called `optimize`, which should be located in the same directory as SciPy.
-* Each of the folders of this repository contains the different problems considered in [our article](https://www.sciencedirect.com/science/article/pii/S0021999124009045). They are labeled also in the same way.
+* To use the codes associated with each example, please download the `modified_minimize.py` and `modified_optimize.py` files and replace the `_minimize.py` and `_optimize.py` scripts with these two files, respectively. The `_minimize.py` and `_optimize.py` scripts can be found in a folder called `optimize`, which is located  within the SciPy folder.
+* The folders within this repository contain the various examples referenced in our article. [our article](https://www.sciencedirect.com/science/article/pii/S0021999124009045), and are labelled accordingly.
 * Each folder contains two `.py` files: 
-  - Main file: Same name as the folder. This is the file used for training.
-  - Hyperparameter file: Same name as the main file, but followed by `_hparams`. In this file, you can choose:
-    + Architecture hyperparameters: Hidden layers, neurons at every hidden layer, and output neurons.
-    + PDE parameters (if any)
-    + Adam hyperparameters: All the hyperparameters related with Adam optimization. See the Main file for details.
-    + Batch hyperparameters: Number of points, number of iterations per batch, and adaptive resampling hyperparameters. We have incorporated here the RAD algorithm introduced in [A comprehensive study of non-adaptive and residual-based adaptive sampling for physics-informed neural networks](https://www.sciencedirect.com/science/article/abs/pii/S0045782522006260).
-    + Quasi-Newton hyperparameters: All the hyperparameters related with Quasi-Newton optimization. See the Main file for details.
-* Run first the hyperparameter file, to generate a `.json` file with all the hyperparameters. Next, run the main file.      
-* Within the different options for the Quasi-Newton hyperparameters, we can select the different Self-scaled Quasi-Newton algorithms, as well as other additional algorithms. In order to choose them we have two different variables: `method` and `method_bfgs`:
+  - **Main file**: Same name as the folder. This is the file used for training.
+  - **Hyperparameter file**: Same name as the main file, but followed by `_hparams`. In this file, you can choose:
+    + **Architecture hyperparameters**: Hidden layers, neurons at every hidden layer, and output neurons.
+    + **PDE parameters (if any)**
+    + **Adam hyperparameters**: All the hyperparameters related with Adam optimization. See the Main file for details.
+    + **Batch hyperparameters**: Number of points, number of iterations per batch, and adaptive resampling hyperparameters. We have incorporated here the RAD algorithm introduced in [A comprehensive study of non-adaptive and residual-based adaptive sampling for physics-informed neural networks](https://www.sciencedirect.com/science/article/abs/pii/S0045782522006260).
+    + **Quasi-Newton hyperparameters**: All the hyperparameters related with Quasi-Newton optimization. See the **Main file** for details.
+* Run first the **hyperparameter file**, to generate a `.json` file with all the hyperparameters. Next, run the **main file**.      
+* Within the different options for the **Quasi-Newton hyperparameters**, we can select the different Self-scaled Quasi-Newton algorithms, as well as other additional algorithms. In order to choose between them we have two different variables: `method` and `method_bfgs`:
    - In `method`, you can choose between:
      + `BFGS`: Here, we include BFGS and the different self-scaled Quasi-Newton methods. To distinguish between the different Quasi-Newton algorithms, we use `method_bfgs` (see below).
      + `bfgsr`: Personal implementation of the factored BFGS Hessian approximations. See [On Recent Developments in BFGS Methods for Unconstrained Optimization](https://ccom.ucsd.edu/reports/UCSD-CCoM-22-01.pdf) for details.
