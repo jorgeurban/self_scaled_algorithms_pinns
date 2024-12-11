@@ -39,12 +39,8 @@ Copyright (c) 2001-2002 Enthought, Inc. 2003-2024, SciPy Developers.
 All rights reserved.
 
 This project contains modified versions of the scripts
-"_optimize.py" and "_minimize.py", which are 
-within "scipy.optimize". While it is based on the original
-work of SciPy, this project is NOT officially maintained or 
-endorsed by the original developers of SciPy. 
-The use of the name 'SciPy' or any related names should not be 
-interpreted as endorsement, sponsorship, or support by the SciPy developers.
+"_optimize.py" and "_minimize.py". These files contain 
+original SciPy code.
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions
