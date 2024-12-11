@@ -12,7 +12,7 @@ together with numerous scripts corresponding to the examples discussed in this w
 # How to use
 
 * To use the codes associated with each example, please download the `modified_minimize.py` and `modified_optimize.py` files and replace the `_minimize.py` and `_optimize.py` scripts with these two files, respectively. The `_minimize.py` and `_optimize.py` scripts can be found in a folder called `optimize`, which is located  within the SciPy folder.
-* The folders within this repository contain the various examples referenced in our article. [our article](https://www.sciencedirect.com/science/article/pii/S0021999124009045), and are labelled accordingly.
+* The folders within this repository contain the various examples referenced in [our article](https://www.sciencedirect.com/science/article/pii/S0021999124009045), and are labelled accordingly.
 * Each folder contains two `.py` files: 
   - **Main file**: Same name as the folder. This is the file used for training.
   - **Hyperparameter file**: Same name as the main file, but followed by `_hparams`. In this file, you can choose:
