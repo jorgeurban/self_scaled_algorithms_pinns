@@ -3,7 +3,7 @@
 This repository includes the implementation of the Self-scaled Quasi-Newton algorithms suggested in:
 * [Unveiling the optimization process of Physics Informed Neural Networks: How accurate and competitive can PINNs be?](https://www.sciencedirect.com/science/article/pii/S0021999124009045)
 
-together with numerous scripts corresponding to the examples discussed in this work. These scripts contain numerous comments, in order to facilitate their use and modification. Other optimization algorithms will also be included in the future.
+together with numerous scripts corresponding to the examples discussed in this work. These scripts contain numerous comments, in order to facilitate their use and modification. Other optimization algorithms, as well as other examples, will also be included in the future.
 
 # Requirements
 * The Machine learning frameworks considered here are [Tensorflow](https://www.tensorflow.org/?hl=es-419) and [Keras](https://keras.io/). The specific versions used in this work are 2.10.1 for Tensorflow, and 2.10.0 for Keras.
