@@ -47,13 +47,16 @@ This project uses the BSD 3-clause license. This work uses modified scripts of S
 
 # Citation 
 ```bibtex
-@article{UrbanStefanouPons2024,
-title = {Unveiling the optimization process of Physics Informed Neural Networks: How accurate and competitive can PINNs be?},
+@article{UrbanStefanouPons2025,
+title = {Unveiling the optimization process of physics informed neural networks: How accurate and competitive can PINNs be?},
 journal = {Journal of Computational Physics},
+volume = {523},
 pages = {113656},
-year = {2024},
+year = {2025},
 issn = {0021-9991},
 doi = {https://doi.org/10.1016/j.jcp.2024.113656},
 url = {https://www.sciencedirect.com/science/article/pii/S0021999124009045},
-author = {Jorge F. Urbán and Petros Stefanou and José A. Pons}
+author = {Jorge F. Urbán and Petros Stefanou and José A. Pons},
+keywords = {Physics-informed neural networks, Optimization algorithms, Non-linear PDEs},
+abstract = {This study investigates the potential accuracy boundaries of physics-informed neural networks, contrasting their approach with previous similar works and traditional numerical methods. We find that selecting improved optimization algorithms significantly enhances the accuracy of the results. Simple modifications to the loss function may also improve precision, offering an additional avenue for enhancement. Despite optimization algorithms having a greater impact on convergence than adjustments to the loss function, practical considerations often favor tweaking the latter due to ease of implementation. On a global scale, the integration of an enhanced optimizer and a marginally adjusted loss function enables a reduction in the loss function by several orders of magnitude across diverse physical problems. Consequently, our results obtained using compact networks (typically comprising 2 or 3 layers of 20-30 neurons) achieve accuracies comparable to finite difference schemes employing thousands of grid points. This study encourages the continued advancement of PINNs and associated optimization techniques for broader applications across various fields.}
 }
